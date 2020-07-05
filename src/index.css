@@ -9,14 +9,18 @@ body {
 }
 
 .app {
-  background-image: url('./assets/cold-bg.jpg');
-  background-size: cover;
-  background-position: bottom;
+  background-image: url('./assets/1.jpg');
+  background-size: contain;
+  background-position: center;
   transition: 0.4 ease;
 }
 
 .app.warm {
   background-image: url('./assets/warm-bg.jpg');
+}
+
+.app.cold {
+  background-image: url('./assets/cold-bg.jpg');
 }
 
 main {
@@ -41,15 +45,14 @@ main {
   outline: none;
 
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
+  border-radius: 10px;
   margin-top: -25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
   
   color: #313131;
   font-size: 20px;
-
-  transition: 0.4s ease;
+  transition: 3s ease-out;
 }
 
 .search-box .search-bar:focus {
